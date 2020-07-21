@@ -1,0 +1,1 @@
+/usr/bin/clang -g   CMakeFiles/uecli.dir/cli/cli.c.o  -o uecli  -Wl,-rpath,/home/mxavier/CLionProjects/uetch/cmake-build-debug libuetch.so 

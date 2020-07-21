@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/getcomp.h
+
+../include/libuetch.h
+../src/platform/dgeom.h
+../src/platform/dgeom.h
+
+../src/platform/dgeom.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+linux/linux_dgeom.h
+../src/platform/linux/linux_dgeom.h
+nt/dgeom.h
+../src/platform/nt/dgeom.h
+
+../src/platform/linux/linux_dgeom.h
+../dgeom.h
+../src/platform/dgeom.h
+
+/home/mxavier/CLionProjects/uetch/cli/cli.c
+libuetch.h
+-
+stdio.h
+-
+stdlib.h
+-
+getcomp.h
+-
+errno.h
+-
+
