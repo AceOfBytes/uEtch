@@ -22,6 +22,6 @@ int main(int argc, char **argv)
 		printf("%d\n", errno);
 		return errno;
 	}
-	printf("block count: %lu\nio minimum size: %lu\nphysical block size: %lu\n", dg.blkct, dg.iomin, dg.pblksiz);
+	printf("block count: %lu\nio minimum size: %lu\nphysical block size: %lu\n", dg.blk_ct, dg.io_min, dg.p_blksiz);
 	return 0;
 }

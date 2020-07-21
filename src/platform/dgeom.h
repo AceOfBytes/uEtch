@@ -10,22 +10,20 @@
 #if defined(__linux__)
 #include "linux/linux_dgeom.h"
 #endif
-#if defined(__WIN64) || defined(__WIN32)
+#if defined(_MSC_FULL_VERSION)
 #include "nt/dgeom.h"
 #endif
 struct devgeom {
-    size_t blkct;
-    size_t iomin;
-    size_t pblksiz;
+    size_t blk_ct;
+    size_t io_min;
+    size_t p_blksiz;
+    size_t max_rsect;
 };
-
-size_t uetch_blkcnt(char *path);
-size_t uetch_blksiz(char *path);
 /**
  * This function abstracts over platform specifics and retrieves information about a drive geometry to dgeom
- * @param dgeom this struct will have it's values set to the relevant values if successful poison otherwise
- * @param path
- * @return
+ * @param dgeom this struct will have it's values set to the relevant values if successful might be poison otherwise
+ * @param path of device to retrive the geometry of
+ * @return 0 or -1, on success and failure respectively
  */
 int uetch_dgeom(struct devgeom *dgeom, char *path);
 
