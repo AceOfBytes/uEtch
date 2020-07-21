@@ -1,4 +1,0 @@
-/home/mxavier/CLionProjects/uetch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mxavier/CLionProjects/uetch/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mxavier/CLionProjects/uetch/cmake-build-debug/CMakeFiles/uecli.dir
-/home/mxavier/CLionProjects/uetch/cmake-build-debug/CMakeFiles/uetch.dir
