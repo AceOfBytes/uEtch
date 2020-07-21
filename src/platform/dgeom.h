@@ -21,6 +21,12 @@ struct devgeom {
 
 size_t uetch_blkcnt(char *path);
 size_t uetch_blksiz(char *path);
+/**
+ * This function abstracts over platform specifics and retrieves information about a drive geometry to dgeom
+ * @param dgeom this struct will have it's values set to the relevant values if successful poison otherwise
+ * @param path
+ * @return
+ */
 int uetch_dgeom(struct devgeom *dgeom, char *path);
 
 #endif //_DGEOM_H_
