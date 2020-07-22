@@ -46,7 +46,7 @@ size_t __iomin(char *path, int fd)
 	return iomin;
 }
 
-size_t __linux_dgeom(struct devgeom *dgeom, char *path)
+int __linux_dgeom(struct devgeom *dgeom, char *path)
 {
 	struct devgeom *_dgeom;
 	int fd;

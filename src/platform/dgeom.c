@@ -12,6 +12,10 @@ int uetch_dgeom(struct devgeom *dgeom, char *path)
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
 	return __linux_dgeom(dgeom, path);
 #pragma clang diagnostic pop
-#elif defined(_MSVC_FULL_VERSION)
+#elif defined(_WINDOWS)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
+	return __nt_dgeom(dgeom, path);
+#pragma clang diagnostic pop
 #endif
 }

@@ -2,6 +2,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+#if !defined(_WINDOWS)
 #include <libuetch.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,3 +26,11 @@ int main(int argc, char **argv)
 	printf("block count: %lu\nio minimum size: %lu\nphysical block size: %lu\n", dg.blk_ct, dg.io_min, dg.p_blksiz);
 	return 0;
 }
+#else
+#include <windows.h>
+#include <stdio.h>
+int winmain(int argc, wchar_t *argv[])
+{
+
+}
+#endif

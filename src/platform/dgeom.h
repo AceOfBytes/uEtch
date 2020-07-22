@@ -8,10 +8,10 @@
 #include <stddef.h>
 #include <stdint.h>
 #if defined(__linux__)
-#include "linux/linux_dgeom.h"
+#include <platform/linux/linux_dgeom.h>
 #endif
-#if defined(_MSC_FULL_VERSION)
-#include "nt/dgeom.h"
+#if defined(_WIN32) || defined(_WIN64)
+#include <platform/nt/nt_dgeom.h>
 #endif
 struct devgeom {
     size_t blk_ct;
